@@ -26,36 +26,61 @@ public class Ini1021 {
         Scanner i = new Scanner(System.in);
 
         //Lê a próxima entrada informada no console
-        double x = i.nextFloat();
+        double value = i.nextDouble();
+        int valueAux = 0;
 
-        // % significa módulo, módulo é o resto da divisão de x por determinado valor
+        // % significa módulo, módulo é o resto da divisão de VALUE por determinado valor
         System.out.println("NOTAS:");
-        System.out.println((Math.abs(x) / 100) + " nota(s) de R$ 100,00");
-        x = (Math.abs(x) % 100);
-        System.out.println(x / 50 + " nota(s) de R$ 50,00");
-        x = x % 50;
-        System.out.println(x / 20 + " nota(s) de R$ 20,00");
-        x = x % 20;
-        System.out.println(x / 10 + " nota(s) de R$ 10,00");
-        x = x % 10;
-        System.out.println(x / 5 + " nota(s) de R$ 5,00");
-        x = x % 5;
-        System.out.println(x / 2 + " nota(s) de R$ 2,00");
-        x = x % 2;
+        valueAux = (int) value / 100;
+        System.out.printf("%d nota(s) de R$ 100.00%n", valueAux);
+        value = value % 100.0;
+
+        valueAux = (int) value / 50;
+        System.out.printf("%d nota(s) de R$ 50.00%n", valueAux);
+        value = value % 50.0;
+
+        valueAux = (int) value / 20;
+        System.out.printf("%d nota(s) de R$ 20.00%n", valueAux);
+        value = value % 20.0;
+
+        valueAux = (int) value / 10;
+        System.out.printf("%d nota(s) de R$ 10.00%n", valueAux);
+        value = value % 10.0;
+
+        valueAux = (int) value / 5;
+        System.out.printf("%d nota(s) de R$ 5.00%n", valueAux);
+        value = value % 5.0;
+
+        valueAux = (int) value / 2;
+        System.out.printf("%d nota(s) de R$ 2.00%n", valueAux);
+        value = value % 2.0;
+
+        //x100 para tratar internamente a moeda como nota e seguir com a mesma lógica anterior
+        value = value * 100.0;
+
         System.out.println("MOEDAS:");
-        System.out.println(x / 1 + " moeda(s) de R$ 1,00");
-        x = x % 0.50;
-        System.out.println(x / 0.50 + " moeda(s) de R$ 0,50");
-        x = x % 0.25;
-        System.out.println(x / 0.25 + " moeda(s) de R$ 0,20");
-        x = x % 0.10;
-        System.out.println(x / 0.10 + " moeda(s) de R$ 0,10");
-        x = x % 0.05;
-        System.out.println(x / 0.05 + " moeda(s) de R$ 0,05");
-        x = x % 0.01;
-        System.out.println(x / 0.01 + " moeda(s) de R$ 0,01");
+        valueAux = (int) value / 100;
+        System.out.printf("%d moeda(s) de R$ 1.00%n", valueAux);
+        value = value % 100.0;
 
+        valueAux = (int) value / 50;
+        System.out.printf("%d moeda(s) de R$ 0.50%n", valueAux);
+        value = value % 50.0;
 
+        valueAux = (int) value / 25;
+        System.out.printf("%d moeda(s) de R$ 0.25%n", valueAux);
+        value = value % 25.0;
+
+        valueAux = (int) value / 10;
+        System.out.printf("%d moeda(s) de R$ 0.10%n", valueAux);
+        value = value % 10.0;
+
+        valueAux = (int) value / 5;
+        System.out.printf("%d moeda(s) de R$ 0.05%n", valueAux);
+        value = value % 5.0;
+
+        valueAux = (int) value;
+        System.out.printf("%d moeda(s) de R$ 0.01%n", valueAux);
     }
 }
 

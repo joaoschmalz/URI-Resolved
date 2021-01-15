@@ -64,8 +64,17 @@ public class Main {
         //Ini1021 nc = new Ini1021();
         //nc.notesCoins();
 
-        Ini1035 st = new Ini1035();
-        st.selectionTest();
+        //Ini1035 st = new Ini1035();
+        //st.selectionTest();
+
+        //Ini1036 bs = new Ini1036();
+        //bs.bhaskara();
+
+        //Ini1037 in = new Ini1037();
+        //in.interval();
+
+        Ini1038 sn = new Ini1038();
+        sn.snack();
 
         //Teste fl = new Teste();
         //fl.teste();
