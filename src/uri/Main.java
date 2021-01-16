@@ -73,8 +73,14 @@ public class Main {
         //Ini1037 in = new Ini1037();
         //in.interval();
 
-        Ini1038 sn = new Ini1038();
-        sn.snack();
+        //Ini1038 sn = new Ini1038();
+        //sn.snack();
+
+        //Ini1040 av = new Ini1040();
+        //av.average();
+
+        Ini1041 co = new Ini1041();
+        co.coordinates();
 
         //Teste fl = new Teste();
         //fl.teste();
