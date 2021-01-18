@@ -79,8 +79,20 @@ public class Main {
         //Ini1040 av = new Ini1040();
         //av.average();
 
-        Ini1041 co = new Ini1041();
-        co.coordinates();
+        //Ini1041 co = new Ini1041();
+        //co.coordinates();
+
+        //Ini1042 sr = new Ini1042();
+        //sr.sort();
+
+        //Ini1043 ar = new Ini1043();
+        //ar.triangle();
+
+        //Ini1044 ml = new Ini1044();
+        //ml.multiple();
+
+        Ini1045 tt = new Ini1045();
+        tt.triangleTypes();
 
         //Teste fl = new Teste();
         //fl.teste();
