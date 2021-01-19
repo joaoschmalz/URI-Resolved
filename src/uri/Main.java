@@ -91,8 +91,11 @@ public class Main {
         //Ini1044 ml = new Ini1044();
         //ml.multiple();
 
-        Ini1045 tt = new Ini1045();
-        tt.triangleTypes();
+        //Ini1045 tt = new Ini1045();
+        //tt.triangleTypes();
+
+        Ini1046 tm = new Ini1046();
+        tm.gameTime();
 
         //Teste fl = new Teste();
         //fl.teste();
